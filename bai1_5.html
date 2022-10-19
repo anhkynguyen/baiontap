@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Nhập vào a, b, c, kiểm tra xem a, b, c có phải là 3 cạnh của tam giác không-->
+<!--1 tam giác?-->
+<!--1 tam giác cân?-->
+<!--1 tam giác đều?-->
+<!--1 tam giác vuông?-->
+<body>
+<script>
+  let a= +prompt("Nhập cạnh a")
+  let b= +prompt("Nhập cạnh b")
+  let c= +prompt("Nhập cạnh c")
+  if (a+b>c && a+c>b && b+c>a&&a==b&&b==c&&c==a){
+    document.write("abc là 3 cạnh của tam giác và là tam giác đều")
+  }
+  else if(a+b>c && a+c>b && b+c>a&&(a**2+b**2)==c**2|| ((a**2+c**2)==b**2 || (b**2+c**2)==a**2)){
+    document.write("abc là 3 cạnh tam giác vuông")
+  }
+  else if(a+b>c && a+c>b && b+c>a){
+    document.write("abc là 3 cạnh tam giác")
+  }
+  if (a+b>c && a+c>b && b+c>a && (a=b||b==c||c==a)){
+      document.write("abc là 3 cạnh của tam giác và là tam giác đều")}
+  else
+      {
+          document.write("abc không phải 3 cạnh tam giác")
+      }
+
+
+
+</script>
+</body>
+</html>

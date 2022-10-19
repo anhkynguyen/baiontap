@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Nhập vào a là năm, in ra thế kỷ.-->
+<!--Cách tính để xem năm đó là thế kỷ mấy như sau: Bạn lấy 1 số đầu
+ (đối với năm có 3 số) và 2 số đầu (đối với năm có 4 số) cộng thêm 1 sẽ ra thế kỷ.-->
+
+<!--Ví dụ:-->
+
+<!--+ Năm 629 (bạn lấy chữ số đầu là 6 + 1 = 7) => thế kỷ 7-->
+
+<!--+ Năm 1389 (bạn lấy 2 chữ số đầu là 13 + 1 = 14) => thế kỷ 14-->
+<body>
+<script>
+  let years = prompt("Nhập năm:")
+let b= years/100
+  let theki= Math.floor(b)
+  document.write(theki+1)
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--7. Tính TBC các phần tử > 10 và chia 4 dư 3-->
+<body>
+<script>
+    let array= [15,37,23,45,34,12]
+    sum=0
+    let b=[]
+    for(let i= 0; i<array.length;i++){
+        if (array[i]>10 && array[i]%4==3){
+            sum+= array[i]
+            if(array[i]>10 && array[i]%4==3){
+              b.push(array[i])
+            }
+        }
+    }
+    document.write(sum/b.length)
+</script>
+</body>
+</html>
